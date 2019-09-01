@@ -44,7 +44,7 @@
                 My name is Grace and I am a student at LBCC. I am pursuing a career in web development. I have no experience with backend languages so PHP is entirely new to me. This is also my first semester back as a full-time student so I am a little worried about getting adjusted.
             </p>
             <p>
-                My hobbies include video games, UFC, and food. I like fiction novels of the mystery, science fiction, domestic, and absurdist varities. I would greatly appreciate any audiobook recommendations!   
+                My hobbies include video games, UFC, and food. I like fiction novels of the mystery, science fiction, domestic, and absurdist varieties. I would greatly appreciate any audiobook recommendations!   
             </p>
             <p>
                 While you're here, check out my <a href="https://github.com/developergrace" target="_blank">Github account</a>.
