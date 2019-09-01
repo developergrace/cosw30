@@ -1,15 +1,31 @@
 <!doctype HTML>
 <html>
     <head>
-        <title>My First PHP Page</title>
+        <title>Labwork 1: Hello World</title>
     </head>
     
     <body>
-        <h1>Grace Park</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam libero justo laoreet sit amet cursus sit. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Eu non diam phasellus vestibulum. Ullamcorper sit amet risus nullam. Lacus luctus accumsan tortor posuere ac ut consequat. Cras tincidunt lobortis feugiat vivamus.</p>
-        
         <?php
-            echo 'This is my beautiful PHP paragraph.';
+        /*
+        File Name: lab1.php
+        Created By: Grace Park
+        Due Date: 9/1/19
+        */
+        ?>
+        
+        <h1>Welcome to my First PHP Page!</h1>
+        <p>
+            My name is Grace and I am a student at LBCC. I am pursuing a career in web development. I have no experience with backend languages so PHP is entirely new to me. This is also my first semester back as a full-time student so I am a little worried about getting adjusted.
+        </p>
+        <p>
+            My hobbies include video games, UFC, and food. I like fiction novels of the mystery, science fiction, domestic, and absurdist varities. I would greatly appreciate any audiobook recommendations!   
+        </p>
+        <p>
+            While you're here, check out my <a href="https://github.com/developergrace" target="_blank">Github account</a>.
+        </p>
+        
+        <?php echo 'As for websites, I like to watch food-related videos on <a href="https://www.youtube.com/" target=_blank">Youtube</a> and browse <a ref="https://www.reddit.com/" target="_blank">Reddit</a> for interesting or humorous stories.';
+        echo 'This was my first time using PHP so it was a little hard for me to wrap my head around and get used to. In particular, I had trouble with escaping the quotation marks inside the a tags in the previous paragraph. Although typing PHP can be hard on the eyes, after reading Chapter 1 of the textbook, I now understand the benefits of using PHP and look forward to learning more.';
         ?>
         
     </body>
