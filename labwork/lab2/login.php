@@ -43,7 +43,7 @@
     </head>
     <body>
         <header>
-            <a href="/">Login Page</a>
+            <a href="https://cosw30-grace.herokuapp.com/labwork/lab2/login.php">Login Page</a>
             <a href="https://github.com/developergrace" target="_blank">Grace's Github</a>
             <a href="https://github.com/rockondiana0416" target="_blank">Diana's Github</a>
         </header>
