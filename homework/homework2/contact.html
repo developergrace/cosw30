@@ -1,0 +1,157 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Political Campaign Supporter Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Adamina|Lato&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                background-image: url('http://thepatternlibrary.com/img/u.png');
+                background-color: #ffa661;
+                font-family: 'Lato', sans-serif;
+                color: #2F4F4F;
+            }
+            
+            main {
+                max-width: 70%;
+                margin: 0 auto;
+                padding: 1% 2%;
+                background-color: white;
+                background-color: rgba(255,255,255,.95);
+            }
+            
+            h1 {
+              font-family: 'Adamina', serif;  
+              text-align: center;
+              font-size: 2.1em;
+              margin-bottom: 5px;
+              letter-spacing: 2px;
+            }
+            
+            aside p {
+                text-align: center;
+                font-size: 1.3em;
+                margin-top: 0;
+                font-style: italic;
+            }
+
+            .question {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 2%;
+            }
+            
+            .label {
+                width: 30%;
+                text-align: right;
+                margin-right: 2%;
+            }
+            
+            .field {
+                width: 40%;
+            }
+            
+            .check { 
+                display: block;
+            }
+            
+            li {
+                list-style-type: none;
+            }
+            
+            textarea {
+                width: 80%;
+            }
+            
+            footer {
+                background-color: black;
+                padding: 1em;
+                text-align: center;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <h1>Ferdinand von Aegir</h1>
+            <aside><p>"I am Ferdinand von Aegir!"</p></aside>
+            <p>Ferdinand von Aegir, eldest son of House Aegir, needs your support in order to become the next ruler of the Adrestian Empire. Help the Ferdie Campaign by completing the below with your information, interests, or by making a contribution!</p>
+            
+            <form method="POST" action="process_contact.php">
+                <div class="question">
+                    <div class="label"><label for="first_name">*First Name:</label></div>
+                    <div class="field"><input name="first_name" id="first_name" type="text"></div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="last_name">*Last Name:</label></div>
+                    <div class="field"><input name="last_name" id="last_name" type="text"></div>
+                </div>
+            
+                <div class="question">
+                    <div class="label"><label for="email">*Email Address:</label></div>
+                    <div class="field"><input name="email" id="email" type="email"></div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="gender">*Gender:</label></div>
+                    <div class="field"><select name="gender" id="gender">
+                        <option value="" selected disabled> Select One</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer Not to Say">Prefer Not to Say</option>
+                    </select></div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="age">*Age:</label></div>
+                    <div class="field"><select name="age" id="age">
+                        <option value="" selected disabled> Select One</option>
+                        <option value="18-40">18-40</option>
+                        <option value="41-64">41-64</option>
+                        <option value="65+">65+</option>
+                    </select></div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="interests">What are your top interests (check all that apply):</label></div>
+                    <div class="field">
+                        <label class="check"><input type="checkbox" name="interests[1]" value="Being Noble">Being Noble</label>
+                        <label class="check"><input type="checkbox" name="interests[2]" value="Protecting Commonres">Protecting Commoners</label>
+                        <label class="check"><input type="checkbox" name="interests[3]" value="Quality Tea Leaves">Quality Tea Leaves</label>
+                        <label class="check"><input type="checkbox" name="interests[4]" value="Horseback Riding">Horseback Riding</label>
+                        <label class="check"><input type="checkbox" name="interests[5]" value="Armor Collection">Armor Collection</label>
+                        <label class="check"><input type="checkbox" name="interests[6]" value="Having No Weaknesses">Having No Weaknesses</label>
+                        </div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="contribution">Contribution:</label></div>
+                    <div class="field"><input type="number" name="contribution" min="0" placeholder="Enter Amount" id="contribution"></div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="mailing">Check this box if you would like to receive updates regarding the Ferdie Campaign!</label></div>
+                    <div class="field"><input type="checkbox" name="mailing" id="mailing" checked></div>
+                </div>
+                
+                <div class="question">
+                    <div class="label"><label for="comments">Additional Comments</label></div>
+                    <div class="field"><textarea maxlength="500" placeholder="500 characters maximum" name="comments" id="comments"></textarea></div>
+                </div>
+                
+                <div class="question">
+                    <button>Submit</button>
+                </div> 
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2019 by Grace Park for COSW 30</p>
+        </footer>
+    </body>
+</html>
