@@ -101,7 +101,7 @@
             
             else {
                 echo "<p>You have incomplete form fields</p>";
-                echo "<p>Please <a>go back</a> and resubmit.</p>";
+                echo "<p>Please <a href=\"https://cosw30-grace.herokuapp.com/homework/homework2/contact.html\">go back</a> and resubmit.</p>";
             }
 
         ?>

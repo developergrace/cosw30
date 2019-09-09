@@ -84,22 +84,22 @@
             <form method="POST" action="process_contact.php">
                 <div class="question">
                     <div class="label"><label for="first_name">*First Name:</label></div>
-                    <div class="field"><input name="first_name" id="first_name" type="text"></div>
+                    <div class="field"><input name="first_name" id="first_name" type="text" required></div>
                 </div>
                 
                 <div class="question">
                     <div class="label"><label for="last_name">*Last Name:</label></div>
-                    <div class="field"><input name="last_name" id="last_name" type="text"></div>
+                    <div class="field"><input name="last_name" id="last_name" type="text" required></div>
                 </div>
             
                 <div class="question">
                     <div class="label"><label for="email">*Email Address:</label></div>
-                    <div class="field"><input name="email" id="email" type="email"></div>
+                    <div class="field"><input name="email" id="email" type="email" required></div>
                 </div>
                 
                 <div class="question">
                     <div class="label"><label for="gender">*Gender:</label></div>
-                    <div class="field"><select name="gender" id="gender">
+                    <div class="field"><select name="gender" id="gender" required>
                         <option value="" selected disabled> Select One</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -110,7 +110,7 @@
                 
                 <div class="question">
                     <div class="label"><label for="age">*Age:</label></div>
-                    <div class="field"><select name="age" id="age">
+                    <div class="field"><select name="age" id="age" required>
                         <option value="" selected disabled> Select One</option>
                         <option value="18-40">18-40</option>
                         <option value="41-64">41-64</option>
