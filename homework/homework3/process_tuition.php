@@ -39,6 +39,14 @@
                 margin-top: 2em;
             }
             
+            a:link {
+                color: #DC291F;
+            }
+            
+            a:hover {
+                color: darkred;
+            }
+            
             footer {
                 background-color: #1D190E;
                 padding: 1em;
@@ -62,14 +70,12 @@
                 $parking = $_POST['parking'];
                 $healthCost = 20;
                 
-                //Calculated Variables
+                //Conditional Variables
                 if($resident == 'Yes') {
                     $perUnit = 46;
-                    $tuitionCost = $units * $perUnit;
                 }
                 else {
                     $perUnit = 265;
-                    $tuitionCost = $units * $perUnit;
                 }
                 
                 if($services == 'Yes') {
@@ -86,6 +92,8 @@
                     $parkingCost = 0;
                 }
                 
+                //Calculations 
+                $tuitionCost = $units * $perUnit;
                 $grossCost = $tuitionCost + $healthCost + $servicesCost + $parkingCost;
                 $scholarship = rand(0,$grossCost);
                 $netCost = $grossCost - $scholarship;
