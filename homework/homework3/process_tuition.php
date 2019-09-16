@@ -35,6 +35,10 @@
                 font-size: 1.5em;
             }
             
+            .back {
+                margin-top: 2em;
+            }
+            
             footer {
                 background-color: #1D190E;
                 padding: 1em;
@@ -104,11 +108,13 @@
                     echo "<p><b>Attendance Cost without Scholarship:</b> $$grossCost<p>";
                     echo "<p><b>Scholarship Award:</b> $$scholarship</p>";
                     echo "<p class=\"total\"><b>Total Due:</b> $$netCost</p>";
+                    
+                    echo "<p class=\"back\"><a href=\"https://cosw30-grace.herokuapp.com/homework/homework3/tuition_calculator.html\">Go back</a></p>";
                 }
             
                 //Error Message
                 else {
-                    echo "<p>There were required fields left blank, please <a href=\"update with new link here\">go back</a> and resubmit.</p>";
+                    echo "<p>There were required fields left blank, please <a href=\"https://cosw30-grace.herokuapp.com/homework/homework3/tuition_calculator.html\">go back</a> and resubmit.</p>";
                 }
             ?>
         </main>
