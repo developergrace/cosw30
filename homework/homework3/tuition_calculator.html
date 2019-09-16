@@ -1,0 +1,141 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tuition Calculator</title>
+        <style>
+            body {
+                margin: 0;
+                color: #1D190E;
+                font-family: Arial, sans-serif;
+            }
+            
+            header {
+                background-color: #1D190E;
+                padding: 10px 0;
+                margin-bottom: 2em;
+            }
+            
+            header img {
+                margin: 0 5%;
+            }
+            
+            main {
+                margin: 0 10%;
+            }
+            
+            h2 {
+                border-left: 5px #DC291F solid;
+                padding-left: 5px;
+                font-size: 1em;
+            }
+            
+            .label {
+                margin-bottom: 5px;
+            }
+            
+            .field {
+                margin-bottom: 15px;
+            }
+            
+            select {
+                font-size: 1.05em;
+            }
+            
+            button {
+                background-color: #DC291F;
+                font-size: 1em;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                margin-bottom: 1em;
+                -webkit-transition: background-color .2s;
+                -moz-transition: background-color .2s;
+                -o-transition: background-color .2s;
+                transition: background-color .2s;
+            }
+            
+            button:hover {
+                background-color: darkred;
+            }
+            
+            button:active {
+                background-color: red;
+            }
+            
+            footer {
+                background-color: #1D190E;
+                padding: 1em;
+                text-align: center;
+                color: white;
+                margin-top: 2em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="lbcc_logo.svg">
+        </header>
+        <main>
+            <h1>LBCC Tuition Calculator</h1>
+            <p>Complete this form to calculate the cost of your tuition.</p>
+            <form method="POST" action="process_tuition.php">
+                <h2>Cost of Tuition</h2>
+                <div class="label"><label for="resident">*Are you a California state resident?</label></div>
+                <div class="field"><select name="resident" id="resident" required>
+                    <option value="" selected disabled> Select One</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select></div>
+                
+                <div class="label"><label for="units">*Number of Units</label></div>
+                <div class="field"><select name="units" id="units" required>
+                    <option value="" selected disabled> Select One</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                </select></div>
+                
+                <p>There is a mandatory Student Health fee of $20.</p>
+                
+                <h2>Optional Fees</h2>
+                <div class="label"><label for="services">College Services Card:</label></div>
+                <div class="field"><select name="services" id="services">
+                    <option value="No" selected>No [$0]</option>
+                    <option value="Yes">Yes [$20]</option>
+                </select></div>
+                
+                <div class="label"><label for="parking">Parking Permit:</label></div>
+                <div class="field"><select name="parking" id="parking">
+                    <option value="No" selected>No [$0]</option>
+                    <option value="Yes">Yes [$30]</option>
+                </select></div>
+
+                <button>Calculate Cost</button>
+
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2019 by Grace Park for COSW 30</p>
+        </footer>
+    </body>
+</html>
