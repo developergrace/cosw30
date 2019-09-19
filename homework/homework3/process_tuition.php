@@ -92,7 +92,7 @@
                     $parkingCost = 0;
                 }
                 
-                //Calculations 
+                //Calculations
                 $tuitionCost = $units * $perUnit;
                 $grossCost = $tuitionCost + $healthCost + $servicesCost + $parkingCost;
                 $scholarship = rand(0,$grossCost);
