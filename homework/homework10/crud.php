@@ -65,7 +65,7 @@ if($result) {
 
 } else {
     // Output an error
-    echo '<p class="error">There was an error generating the user table.</p>';
+    $table = 'There was an error generating the user table.';
     }
 
 ?>
@@ -173,6 +173,12 @@ if($result) {
                     <th>Password</th>
                 </tr>
             </thead>
+
+            <?php
+            if(isset($table)) {
+                echo '<p class="error">' . $table . '</p>';
+            ?>
+
             <tbody>
             <?php
             foreach($rows as $row) {
