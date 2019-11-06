@@ -187,13 +187,12 @@ if($result) {
             }
             ?>
             </tbody>
-
-            <?php
-                if(isset($table_msg[0])) {
-                    echo '<p class="error">' . $table_msg[0] . '</p>';
-                }
-            ?>
         </table>
+        <?php
+            if(isset($table_msg[0])) {
+                echo '<p class="error">' . $table_msg[0] . '</p>';
+            }
+        ?>
     </main>
 
     <footer>
