@@ -4,45 +4,46 @@ include('database.php');
 
 // CHECK IF THE FORM HAS BEEN SUBMITTED AND INSERT NEW USER INTO THE DATABASE
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $message = [];
-    $complete = [];
+    $field_msg = [];
+    $enroll_msg = [];
+    $table_msg = [];
 
     if(empty($_POST['first_name'])) {
-        $message[0] = 'You forgot to enter your first name!';
+        $field_msg[0] = 'You forgot to enter your first name!';
     } else {
         $first_name = trim($_POST['first_name']);
     }
 
     if(empty($_POST['last_name'])) {
-        $message[1] = 'You forgot to enter your last name!';
+        $field_msg[1] = 'You forgot to enter your last name!';
     } else {
         $last_name = trim($_POST['last_name']);
     }
 
     if(empty($_POST['email'])) {
-        $message[2] = 'You forgot to enter your email!';
+        $field_msg[2] = 'You forgot to enter your email!';
     } else {
         $email = trim($_POST['email']);
     }
 
     if(!empty($_POST['pass1'])) {
         if($_POST['pass1'] != $_POST['pass2']) {
-            $message[3] = 'Your passwords did not match.';
+            $field_msg[3] = 'Your passwords did not match.';
         } else {
             $password = trim($_POST['pass1']);
         }
     } else {
-        $message[4] = 'You forgot to enter a password!';
+        $field_msg[4] = 'You forgot to enter a password!';
     }
 
-    if(empty($message)) {
+    if(empty($field_msg)) {
         $insert_query   = "INSERT INTO USER_PARK (first_name, last_name, email, password)
                             VALUES ('$first_name', '$last_name', '$email', '$password')";
 
         if($result = mysqli_query($connection, $insert_query)) {
-            $complete[0] = 'You\'ve successfully enrolled!';
+            $enroll_msg[0] = 'You\'ve successfully enrolled!';
         } else {
-            $complete[1] = 'There was an error in your enrollment, please try again.';
+            $enroll_msg[1] = 'There was an error in your enrollment, please try again.';
         }
     }
 }
@@ -65,7 +66,7 @@ if($result) {
 
 } else {
     // Output an error
-    echo '<p class="error">There was an error generating the user table.</p>';
+    $table_msg[] = 'There was an error generating the user table.';
     }
 
 ?>
@@ -105,8 +106,8 @@ if($result) {
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" value="<?php if(isset($_POST['first_name'])) echo $_POST['first_name'];  ?>"><br>
                 <?php
-                    if(isset($message[0])) {
-                        echo '<p class="error">' . $message[0] . '</p>';
+                    if(isset($field_msg[0])) {
+                        echo '<p class="error">' . $field_msg[0] . '</p>';
                     }
                 ?>
             </div>
@@ -115,8 +116,8 @@ if($result) {
                 <label for="last_name">Last Name</label>
                 <input type="text" id="last_name" name="last_name" value="<?php if(isset($_POST['last_name'])) echo $_POST['last_name'];  ?>"><br>
                 <?php
-                    if(isset($message[1])) {
-                        echo '<p class="error">' . $message[1] . '</p>';
+                    if(isset($field_msg[1])) {
+                        echo '<p class="error">' . $field_msg[1] . '</p>';
                     }
                 ?>
             </div>
@@ -125,8 +126,8 @@ if($result) {
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>"><br>
                 <?php
-                    if(isset($message[2])) {
-                        echo '<p class="error">' . $message[2] . '</p>';
+                    if(isset($field_msg[2])) {
+                        echo '<p class="error">' . $field_msg[2] . '</p>';
                     }
                 ?>
             </div>
@@ -135,8 +136,8 @@ if($result) {
                 <label for="pass1">Password</label>
                 <input type="password" id="pass1" name="pass1"><br>
                 <?php
-                    if(isset($message[4])) {
-                        echo '<p class="error">' . $message[4] . '</p>';
+                    if(isset($field_msg[4])) {
+                        echo '<p class="error">' . $field_msg[4] . '</p>';
                     }
                 ?>
             </div>
@@ -145,8 +146,8 @@ if($result) {
                 <label for="pass2">Confirm Password</label>
                 <input type="password" id="pass2" name="pass2"><br>
                 <?php
-                    if(isset($message[3])) {
-                        echo '<p class="error">' . $message[3] . '</p>';
+                    if(isset($field_msg[3])) {
+                        echo '<p class="error">' . $field_msg[3] . '</p>';
                     }
                 ?>
             </div>
@@ -154,11 +155,11 @@ if($result) {
             <button>Enroll</button>
 
             <?php
-                if(isset($complete[0])) {
-                    echo '<p class="success">' . $complete[0] . '</p>';
+                if(isset($enroll_msg[0])) {
+                    echo '<p class="success">' . $enroll_msg[0] . '</p>';
                 }
-                if(isset($complete[1])) {
-                    echo '<p class="error">' . $complete[1] . '</p>';
+                if(isset($enroll_msg[1])) {
+                    echo '<p class="error">' . $enroll_msg[1] . '</p>';
                 }
             ?>
         </form>
@@ -173,6 +174,13 @@ if($result) {
                     <th>Password</th>
                 </tr>
             </thead>
+
+            <?php
+                if(isset($table_msg[])) {
+                    echo '<p class="error">' . $table_msg[] . '</p>';
+                }
+            ?>
+
             <tbody>
             <?php
             foreach($rows as $row) {
