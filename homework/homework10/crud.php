@@ -66,7 +66,7 @@ if($result) {
 
 } else {
     // Output an error
-    $table_msg[] = 'There was an error generating the user table.';
+    $table_msg[0] = 'There was an error generating the user table.';
     }
 
 ?>
@@ -176,8 +176,8 @@ if($result) {
             </thead>
 
             <?php
-                if(isset($table_msg[])) {
-                    echo '<p class="error">' . $table_msg[] . '</p>';
+                if(isset($table_msg[0])) {
+                    echo '<p class="error">' . $table_msg[0] . '</p>';
                 }
             ?>
 
