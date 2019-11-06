@@ -175,12 +175,6 @@ if($result) {
                 </tr>
             </thead>
 
-            <?php
-                if(isset($table_msg[0])) {
-                    echo '<p class="error">' . $table_msg[0] . '</p>';
-                }
-            ?>
-
             <tbody>
             <?php
             foreach($rows as $row) {
@@ -193,6 +187,12 @@ if($result) {
             }
             ?>
             </tbody>
+
+            <?php
+                if(isset($table_msg[0])) {
+                    echo '<p class="error">' . $table_msg[0] . '</p>';
+                }
+            ?>
         </table>
     </main>
 
