@@ -190,7 +190,7 @@ if($result) {
         </table>
         <?php
             if(isset($table_msg[0])) {
-                echo '<p class="error">' . $table_msg[0] . '</p>';
+                echo '<p class="table_error">' . $table_msg[0] . '</p>';
             }
         ?>
     </main>

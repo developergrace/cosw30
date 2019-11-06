@@ -86,6 +86,10 @@ tr:nth-child(even) {
     background-color: #D9F5F5;
 }
 
+.table_error {
+    margin: 0 auto;
+}
+
 /* Footer Styles */
 footer {
   background-color: #2D3319;
