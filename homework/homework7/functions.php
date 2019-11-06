@@ -50,6 +50,7 @@
 
             <div class="results">
                 <?php
+                if(!empty($num1 && $num2 && $operator)) {
                     switch ($operator) {
                         case "add":
                             echo $num1 . " + " . $num2 . " = ";
@@ -68,6 +69,10 @@
                             echo calculate($num1/$num2);
                         break;
                     }
+                }
+                else {
+                    echo "A field was left blank.";
+                }
                 ?>
             </div>
 
