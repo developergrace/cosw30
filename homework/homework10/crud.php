@@ -172,6 +172,7 @@ if($result) {
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>Password</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
 
@@ -183,6 +184,7 @@ if($result) {
                     <td>' . $row['last_name'] . '</td>
                     <td>' . $row['email'] . '</td>
                     <td>' . $row['password'] . '</td>
+                    <td><a href="update_crud.php?id=' . $row['user_id'] . '">Edit</a></td>
                 </tr>';
             }
             ?>
