@@ -76,6 +76,7 @@ if($result) {
 <head>
     <title>CRUD Camp</title>
     <link rel="stylesheet" href="crud_style.css">
+    <script src="https://kit.fontawesome.com/b25da52a36.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -104,7 +105,7 @@ if($result) {
 
             <div class="field">
                 <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" value="<?php if(isset($_POST['first_name'])) echo $_POST['first_name'];  ?>"><br>
+                <input type="text" id="first_name" name="first_name" value="<?php if(isset($_POST['first_name'])) echo $_POST['first_name'];  ?>">
                 <?php
                     if(isset($field_msg[0])) {
                         echo '<p class="error">' . $field_msg[0] . '</p>';
@@ -114,7 +115,7 @@ if($result) {
 
             <div class="field">
                 <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" value="<?php if(isset($_POST['last_name'])) echo $_POST['last_name'];  ?>"><br>
+                <input type="text" id="last_name" name="last_name" value="<?php if(isset($_POST['last_name'])) echo $_POST['last_name'];  ?>">
                 <?php
                     if(isset($field_msg[1])) {
                         echo '<p class="error">' . $field_msg[1] . '</p>';
@@ -124,7 +125,7 @@ if($result) {
 
             <div class="field">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>"><br>
+                <input type="email" id="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>">
                 <?php
                     if(isset($field_msg[2])) {
                         echo '<p class="error">' . $field_msg[2] . '</p>';
@@ -134,7 +135,7 @@ if($result) {
 
             <div class="field">
                 <label for="pass1">Password</label>
-                <input type="password" id="pass1" name="pass1"><br>
+                <input type="password" id="pass1" name="pass1">
                 <?php
                     if(isset($field_msg[4])) {
                         echo '<p class="error">' . $field_msg[4] . '</p>';
@@ -144,7 +145,7 @@ if($result) {
 
             <div class="field">
                 <label for="pass2">Confirm Password</label>
-                <input type="password" id="pass2" name="pass2"><br>
+                <input type="password" id="pass2" name="pass2">
                 <?php
                     if(isset($field_msg[3])) {
                         echo '<p class="error">' . $field_msg[3] . '</p>';
@@ -184,7 +185,7 @@ if($result) {
                     <td>' . $row['last_name'] . '</td>
                     <td>' . $row['email'] . '</td>
                     <td>' . $row['password'] . '</td>
-                    <td><a href="update_crud.php?id=' . $row['user_id'] . '">Edit</a></td>
+                    <td><a href="update.php?id=' . $row['user_id'] . '"><i class="fas fa-edit"></i></a></td>
                 </tr>';
             }
             ?>

@@ -25,6 +25,7 @@ main {
 
 .blurb {
     text-align: justify;
+    text-align-last: center;
 }
 
 h2 {
@@ -36,9 +37,9 @@ h2 {
 .field {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 1%;
+    width: 100%;
 }
 
 label {
@@ -49,17 +50,20 @@ label {
 }
 
 input {
-    width: 30%;
     font-size: 1.2em;
+    flex: .5 1 auto;
 }
 
 .success {
     color: green;
     font-weight: bold;
+    text-align: center;
 }
 .error {
     color: red;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 
 button {
@@ -85,6 +89,14 @@ th {
 tr:nth-child(even) {
     background-color: #D9F5F5;
 }
+
+.fa-edit {
+    color: #6060b5;
+}
+
+ .fa-edit:hover {
+    color: #b56060;
+ }
 
 /* Footer Styles */
 footer {
