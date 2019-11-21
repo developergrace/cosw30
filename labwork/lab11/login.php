@@ -1,22 +1,50 @@
 <?php
-include('includes/header.php');
-include('includes/database.php');
+session_start();
+
 // Check if the user is already logged in
 // If they are, redirect to welcome.php
+if(isset($_SESSION['user_id'])) {
+    header('Location: welcome.php');
+    exit; // this line is to ensure that the rest of the code on this page does not execute if this condition is met
+}
+
+include('includes/header.php');
+include('includes/database.php');
+
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Grab values from the form inputs
     $email = $_POST['email'];
     $password = $_POST['password'];
+
     // Validate the form data
+
     // Check if the user's email and password are in the database
-    $query = "";
+    $query = "SELECT user_id, first_name 
+              FROM USER_PARK 
+              WHERE email = '$email'
+              AND password = '$password'";
+
+    // This line runs the query
     $result = mysqli_query($connection, $query);
-    // If they are, log them in
+
+    // If user info is in the database, log them in using the below
     if($result) {
+        $user = mysqli_fetch_assoc($result);
         // Add their user id to the $_SESSION
+        $_SESSION['user_id'] = $user['user_id'];
+        $_SESSION['first_name'] = $user['first_name'];
+
+        print_r($user);
+        print_r($_SESSION);
+
         // Redirect to the welcome.php page
+        header('Location: welcome.php');
+        exit;
+
+
     // If they aren't, show the log in form with an error
     } else { 
+
     }
 } // END of $_SERVER['REQUEST_METHOD']
 ?>
@@ -41,6 +69,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
     </div>
 </div>
+<?php print_r($_SESSION); ?> <!-- this let's us see if session is working as it will 
+show the data even if we refresh; not needed for the actual page-->
 
 </main>
 

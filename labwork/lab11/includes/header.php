@@ -22,7 +22,7 @@
                 </li>
                 <!-- Add logic to hide the Logout link if the user isn't logged in -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
+                    <a class="nav-link" href="/labwork/lab11/logout.php">Logout</a>
                 </li>
             </ul>
         </div>

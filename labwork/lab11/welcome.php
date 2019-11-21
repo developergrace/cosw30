@@ -1,13 +1,20 @@
 <?php
-include('includes/header.php');
-include('includes/database.php');
+session_start();
+
 // Check if the user is already logged in
 // If they aren't, redirect to login.php
+if(!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit; // this line is to ensure that the rest of the code on this page does not execute if this condition is met
+}
+
+include('includes/header.php');
+include('includes/database.php');
 ?>
 
 <main class="container">
 
-    <h1>You Logged In!</h1>
+    <h1>You Logged In! Hello <?php echo $_SESSION['first_name']; ?></h1>
 
     <h2>Here's a list of other users</h2>
 
