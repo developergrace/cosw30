@@ -1,0 +1,213 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #F2F1F1;
+}
+
+#container {
+    margin: 0 10%;
+}
+
+header {
+    padding: 40px 0;
+    margin-bottom: 5px;
+    overflow: auto;
+    background-color: #000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    position: relative;
+}
+
+.top3 {
+    margin-top: 3%;
+}
+
+.box {
+    background-color: white;
+    float: left;
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 3%;
+    height: 400px;
+    overflow: auto;
+}
+
+#boxcenter {
+    background-color: white;
+    float: left;
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 3%;
+    position: relative;
+    left: 5%;
+    height: 400px;
+    overflow: auto;
+}
+
+.box p {
+    color: darkslategray;
+}
+#rightp {
+    float: right;
+}
+
+.register {
+    margin-bottom: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px dotted black;
+    clear: both;
+}
+
+h1 {
+    color: #DA291C;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+h2, strong {
+    color: #DA291C;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Main Nav & Link Styles */
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav {
+    position: absolute;
+    right: 3%;
+    top: 50px;
+}
+
+header a {
+    margin: 15px;
+    font-size: 1.25em;
+}
+
+a:link, a:visited {
+    color: #FFF;
+}
+
+header a:focus, header a:hover {
+    color: #DA291C;
+    padding-bottom: 5px;
+    border-bottom: 3px solid; 
+}
+
+footer a:focus, footer a:hover {
+    color: #DA291C;
+}
+
+header a:active, footer a:active {
+    color: #A11D21;
+}
+
+.register a {
+    background-color: #DA291C;
+    border: 1px outset;
+    border-radius: 7px;
+    color: #FFF;
+    padding: 10px 15px;
+    float: right;
+    position: relative;
+    right: 50px;
+    bottom: 10px;
+}
+
+.register a:focus, .register a:hover {
+    background-color: #A11D21;
+}
+
+.register a:active {
+    border: 1px inset;
+}
+
+/* Image Styles */
+
+img[alt="LBCC Logo"] {
+    position: relative;
+    left: 10px;
+}
+
+#img1 {
+    width: 56%;
+    object-fit: cover;
+    height: 256px;
+}
+
+#img2 {
+    float: right;
+    width: 43.5%;
+    object-fit: cover;
+    height: 256px;
+}
+
+.top3 img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+/* Footer Style */
+
+footer {
+    font-size: 1.2em;
+    border-top: 1px solid black;
+    overflow: auto;
+    background-color: #000;
+    background-image: linear-gradient(135deg, #000 0%, #414141 74%);
+    position: relative;
+}
+
+.address {
+    max-width: 250px;
+    float: left;
+    color: #FFF;
+    margin-left: 5%;
+}
+
+footer nav {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 25%;
+    margin: auto; 
+    width: 300px; 
+}
+
+footer nav a {
+    padding: 10px;
+}
+
+#lines {
+    border-right: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+}
+
+.social {
+    float: right;
+    margin: 5% 5% 0 5%;
+}
+
+.social img {
+    max-width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
