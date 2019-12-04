@@ -16,6 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+
     // Validate the form data
 
     // Check if the user's email and password are in the database
@@ -41,10 +42,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: welcome.php');
         exit;
 
-
     // If they aren't, show the log in form with an error
     } else { 
-
+        echo "You are wrong.";
     }
 } // END of $_SERVER['REQUEST_METHOD']
 ?>
@@ -69,9 +69,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
     </div>
 </div>
-<?php print_r($_SESSION); ?> <!-- this let's us see if session is working as it will 
-show the data even if we refresh; not needed for the actual page-->
+<?php 
+    print_r($_SESSION); 
 
+?>  
 </main>
 
 <?php include('includes/footer.php'); ?>
