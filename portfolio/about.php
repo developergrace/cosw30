@@ -15,7 +15,7 @@ my decision to attend LBCC. I'm a curious individual, hardworking team player, a
     </div>
     
     <div class="abouttext">
-        <p class="about">I come preloaded with HTML and CSS knowledge. I've been creating fun webpages with them since about
+        <p class="about">I come preloaded with HTML and CSS knowledge. I've been creating fun pages with them since about
          6th grade so they are almost second-nature to me. Through my educational journey, I've added the following
          languages and tools to my arsenal:
          <ul>
