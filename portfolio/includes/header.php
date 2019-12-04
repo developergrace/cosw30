@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Grace Park | Portfolio</title>
         <meta name="description" content="front-end web developer development grace park">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="includes/styles.css">
         <link href="https://fonts.googleapis.com/css?family=News+Cycle|Staatliches&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
