@@ -1,0 +1,136 @@
+html { 
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 1rem 7rem;
+    background: url(roses.png) fixed center #bdc9cf;
+}
+
+ul {
+    top: 10px;
+	right: 56px;
+    position: fixed;
+}
+li {
+    display: block;
+	margin: 25px 0;
+    
+}
+li a {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,.9);
+    padding: 10px;
+}
+
+#header7 {
+    text-align: center;
+    background: url(teapot.svg) no-repeat 50% 20%;
+    background-size: 65px;
+}
+
+#header8 {
+    text-align: center;
+    background: url(hedge.svg) no-repeat 50% 20%;
+    background-size: 65px;
+}
+
+#header9 {
+    text-align: center;
+    background: url(turtle.svg) no-repeat 50% 20%;
+    background-size: 65px;
+}
+
+header {
+    text-align: center;
+    padding-top: 3.5em;
+}
+
+h1, a {
+    font-family: 'Limelight', cursive, sans-serif;
+    text-decoration: none;
+}
+
+p {
+    margin: 1rem 3rem;
+    text-align: justify;
+    text-indent: 2rem;
+    font-family: 'Ovo', Georgia, serif;
+}
+
+.storytext {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,.9);
+    border-radius: 10px;
+    padding-bottom: 4rem;
+}
+
+
+.firstp:first-letter {
+    font-size: 2rem;
+}
+
+.righta {
+    float: right;
+}
+
+.lefta {
+    float: left;
+}
+
+.righta:hover, .lefta:hover {
+    padding-top: 5px;
+} 
+
+.righta:active, .lefta:active {
+    padding-top: 10px;
+} 
+
+.rightimg {
+    float: right;
+    max-width: 25%;
+    border: 1px solid silver;
+    margin: 1rem;
+}
+
+.oversize {
+    float: right;
+    max-width: 40%;
+    border: 1px solid silver;
+    margin: 1rem;
+}
+
+.leftimg {
+    float: left;
+    max-width: 25%;
+    border: 1px solid silver;
+    margin: 1rem;
+}
+
+li a:link {
+    color: #696;
+}
+
+li a:visited {
+    color: #696969;
+}
+
+li a:focus, li a:hover, li a.selected {
+    color: #a4c2a4;
+}
+
+li a:active {
+    color: #375337;
+}
+
+
+.song {
+    text-align: center;
+    font-style: italic;
+    text-indent: -2rem;
+    line-height: 1.5em;
+}

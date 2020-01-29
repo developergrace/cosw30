@@ -1,0 +1,258 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 0;
+}
+
+/* Header Style */
+
+header {
+    background: url(BKHeader.jpg) no-repeat center top -100px / cover;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+header p {
+    text-align: center;
+    color: white;
+    margin: 0 150px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Nav Styles */
+
+nav {
+    text-align: center;
+    font-size: 1.3em;
+    border: 2px solid #720026;
+    background-color: #720026;
+}
+
+nav li {
+    font-family: 'Dosis', sans-serif;
+    display: inline;
+    padding: 2em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #F6F5AE;
+}
+
+nav a:focus, li a:hover {
+    color: #E9B44C;
+}
+
+nav a:active {
+    color: #9B2915;
+}
+
+
+/* Main Styles */
+
+main {
+    margin: 0 7.5em;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: darkred;
+    text-align: center;
+    clear: both;
+    -webkit-clip-path: polygon(90% 0%, 95% 50%, 90% 100%, 5% 100%, 10% 50%, 5% 0%);
+    clip-path: polygon(90% 0%, 95% 50%, 90% 100%, 5% 100%, 10% 50%, 5% 0%);
+    background-color: #E9B44C;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #383838;
+    text-align: center;
+    clear: both;
+}
+
+.left {
+    float: left;
+    width: 75%;
+}
+
+.right {
+    float: right;
+    width: 75%;
+}
+
+.imgr {
+    float: right;
+    max-width: 20%;
+    padding: 3px;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.imgl {
+    float: left;
+    max-width: 20%;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+section {
+    overflow: auto;
+}
+
+article {
+    margin-bottom: 5em;
+}
+
+p, article li, form, select, #tourdate, #notes, input, table {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+    color: #383838;
+}
+
+article a:link {
+    color: #E9B44C;
+}
+
+article a:visited {
+    color: #720026;
+}
+
+article a:focus, article a:hover, article a:active {
+    color: #9B2915;
+}
+
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin-top: 5em;
+    clear: both;
+}
+
+footer p {
+    background-color: #E9B44C;
+    margin: 50px;
+    -webkit-clip-path: polygon(85% 0%, 87% 50%, 85% 100%, 15% 100%, 13% 50%, 15% 0%);
+    clip-path: polygon(85% 0%, 87% 50%, 85% 100%, 15% 100%, 13% 50%, 15% 0%);
+}
+
+/* Table Styles */
+
+table {
+    margin: 1em auto 0;
+}
+
+thead {
+    background-color: #720026;
+    color: white;    
+}
+
+tbody th, tbody td {
+    border: 1px solid; 
+}
+
+tbody th {
+    width: 50%;
+    padding: 5px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+/* Form Style */
+
+form {
+    margin: 2em auto;
+    float: left;
+    width: 100%;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+fieldset {
+    width: 350px;
+    float: left;
+    margin-left: 15%;
+}
+
+legend {
+    background-color: #E9B44C;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#contact input {
+    width: 300px;
+    margin: 10px;
+}
+
+#contact input[placeholder*="City"] {
+    width: 230px;
+}
+
+label, textarea {
+    display: block;
+    margin: 10px;
+}
+
+#states {
+    padding: 1px .5px .5px;
+}
+
+#ages {
+    padding: 0 25px;
+}
+
+input[type="submit"] {
+    position: absolute;
+    bottom: 30px;
+    right: 40%;
+    padding: .5% 1%;
+    width: 200px;
+    font-weight: bold;
+    color: ghostwhite;
+    background-color: #720026;
+}
+
+#formp {
+    margin: 3% 13% 0;
+}
+
+textarea{
+    margin-left: 0;
+}
