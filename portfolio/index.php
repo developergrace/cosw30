@@ -8,7 +8,7 @@ Want to create something together? <a href="mailto:gpark2351@gmail.com">Let's ta
 <hr>        
 
 <div class="projects">
-    <img src="images/project1.PNG" alt="Alice in Wonderland">
+    <img src="/portfolio/images/project1.PNG" alt="Alice in Wonderland">
         <div class="overlay">
             <div class="info">
                 <h3>Alice in Wonderland</h3>
