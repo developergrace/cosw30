@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Grace Park | Portfolio</title>
-    <meta name="description" content="front-end web developer development grace park">
+    <meta name="description" content="front-end web developer designer website development grace park">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <link rel="stylesheet" href="/includes/styles.scss">
+    <link rel="stylesheet" href="/includes/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
@@ -57,7 +57,7 @@
 <a href="https://cosw30-grace.herokuapp.com/homework/homework10/crud.php" target="_blank"><div class="card project-tile">
   <div class="card-image">
     <figure class="image">
-      <img src="/images/project1.PNG" alt="Adventure Awaits">
+      <img src="/images/crud.PNG" alt="Adventure Awaits">
     </figure>
   </div>
   <div class="card-content">
@@ -195,10 +195,16 @@
     <div class="columns size">
     <img src="/images/gp.jpg" alt="Grace Park" class="column is-one-quarter is-offset-1">
       
-    <p class="column is-6">This is the second class I've taken for the web development certification program at LBCC. There were times I felt overwhelmed with the material but I've learned so much about web development from this course including how to use frameworks and processors, and create responsive websites using flex and grid. My goal is to become a front-end web developer so these are all valuable skills I will take with me. </p></div>
+    <p class="column is-6">Coding has been a part of me for almost as long as I can remember. I began learning it as a kid
+     through the virtual pet site Neopets! Since then, I have developed my skills through my education at LBCC. 
+     I am familiar with the following languages and frameworks:<br><br>
+     HTML, CSS, JavaScript, Vue.JS, Bulma, Skeleton, Bootstrap, PHP, SQL, mySQL, SASS/SCSS, Laravel
+     </p>
+     
+     </div>
     
     <div class="columns">
-    <p class="column is-8 is-offset-1">For this final project, we were instructed to apply two topics from the technical documentation project. I wanted to explore as many topics as I could so I chose topics I didn't write about. The topics I chose are:</p></div>
+    <p class="column is-8 is-offset-1">This portfolio was an assignment for my web design class, we were instructed to apply two topics from a list. I wanted to explore as many topics as I could so I chose topics I didn't write about. The topics I chose are:</p></div>
   
   <div class="columns">
     <p class="column is-8 is-offset-1"><strong>Bulma</strong> &ndash; This page is made using the Bulma framework. I had an easier time understanding Bulma's column-based layout than Bootstrap's row-based layout, mostly due to Bulma's &apos;is-offset-by&apos; class which gives me full grid control.</p></div>
