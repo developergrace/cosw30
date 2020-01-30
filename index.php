@@ -209,7 +209,7 @@
     utilizing media queries to change the layout depending on whether you&#39;re viewing my site on a desktop, tablet, or mobile. 
     I created this portfolio for my web design class and we were instructed 
     to apply two topics from a list. I wanted to explore as many topics as I could so 
-    I chose topics I didn't write about. The topics I chose are:</p></div>
+    I implemented tools that I had not used previously. The topics I chose are:</p></div>
   
   <div class="columns">
     <p class="column is-8 is-offset-1"><strong>Bulma</strong> &ndash; This page is made using the Bulma framework. I had an easier time understanding Bulma's column-based layout than Bootstrap's row-based layout, mostly due to Bulma's &apos;is-offset-by&apos; class which gives me full grid control.</p></div>
