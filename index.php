@@ -178,7 +178,8 @@
     <p>PHP Form</p>
   </div>
   <div class="message-body">
-    Response form created using PHP. Completing the form results in a thank you message confirming your details.
+    Response form created using PHP. Completing the form results in a thank you message confirming your details. 
+    Your entered information is not saved and you will not receive an email.
     </div></article>
   </div>
       
