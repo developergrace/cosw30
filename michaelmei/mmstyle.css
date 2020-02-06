@@ -1,0 +1,30 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 0;
+}
+
+#logo {
+    max-width: 170px;
+}
+
+main {
+    background-image: linear-gradient(to right, #fdb302, #fa9a0c, #f58219, #ed6a24, #e2512c, #da3c3a, #cf2746, #c01250, #ae0b61, #95166e, #792277, #572a7b);
+    background-color: #e2512c;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: white;
+    background-color: rgba(255,255,255,.5);
+    padding: 0 25%;
+}
