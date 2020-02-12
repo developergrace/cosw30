@@ -160,7 +160,7 @@
 </div>
         <div class="columns">
       <div class="column is-5 is-offset-1">
-<a href="/homework/homework2/contact.html" target="_blank"><div class="card project-tile">
+<a href="https://cosw30-grace.herokuapp.com/homework/homework2/contact.html" target="_blank"><div class="card project-tile">
   <div class="card-image">
     <figure class="image">
       <img src="/images/ferd.PNG" alt="Response Form">
