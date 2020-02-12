@@ -1,14 +1,10 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
+ ____  ____  _  _     ___  ____   __    ___  ____ 
+(    \(  __)/ )( \   / __)(  _ \ / _\  / __)(  __)
+ ) D ( ) _) \ \/ /  ( (_ \ )   //    \( (__  ) _) 
+(____/(____) \__/    \___/(__\_)\_/\_/ \___)(____)
  ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to AWS Cloud9!
+Welcome to my profile.
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
+You can visit http://developergrace.com/ to view my profile.
