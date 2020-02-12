@@ -1,30 +1,137 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit; 
-}
-
 body {
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.poster {
+    height: 100vh;
+    background-image: url('images/onward_poster.jpg'); /* update poster url here */
+    background-repeat: no-repeat;
+    background-origin: left center;
+    background-attachment: fixed;
+    background-position: fixed;
+    background-size: contain;
+}
+
+.overlay {
+    background-color: white;
+    box-shadow: 125px 0 150px 300px white;
+    height: 100vh;
+}
+
+.info {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.header {
+    margin-top: 1%;
 }
 
 #logo {
-    max-width: 170px;
+    width: 190px !important;
+    height: auto;
+    overflow: hidden;
 }
 
-main {
-    background-image: linear-gradient(to right, #fdb302, #fa9a0c, #f58219, #ed6a24, #e2512c, #da3c3a, #cf2746, #c01250, #ae0b61, #95166e, #792277, #572a7b);
-    background-color: #e2512c;
-    display: flex;
-    justify-content: center;
+.bordered {
+    border-bottom: 5px dotted lightgray
 }
 
-form {
-    background-color: white;
-    background-color: rgba(255,255,255,.5);
-    padding: 0 25%;
+h1 {
+    font-family: 'Bangers', cursive;
+    color: #AF161B;
+    text-shadow: 2px 2px 2px lightgray;
+    font-size: 3em;
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 1%;
+}
+
+button {
+    margin: 3% 0;
+}
+
+.text-danger  {
+    font-size: .8em;
+}
+
+.important {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.important strong {
+    font-size: 1.5em;
+    padding: 0 5px;
+}
+
+.important .key {
+    border-bottom: 3px solid #AF161B;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+.note {
+    margin: 20px 0;
+}
+
+.alert {
+    background-color: #AF161B;
+    text-align: center;
+}
+
+.alert strong, .alert i {
+    color: white;
+}
+
+.alert i {
+    font-size: .9em;
+}
+
+iframe {
+    display: block;
+    width: 50%;
+    margin: 0 auto 20px;
+}
+
+@media screen and (max-width:991px) {
+    .overlay {
+        background-color: white;
+        background-color: rgba(255,255,255,.75);
+        box-shadow: none;
+    }
+
+    .bordered {
+        border-bottom: 5px dotted gray
+    }
+
+    .poster {
+        background-size: cover;
+    }
+
+    .background {
+        background-color: white;
+        box-shadow: 0 30px 50px 90px white;
+    }
+}
+
+@media screen and (max-width:1102px) {
+    .info {
+        flex-flow: column nowrap !important;
+        align-content: space-between !important;
+        justify-content: space-between !important;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
 }
