@@ -111,7 +111,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<?php include('background.php') ?>
+<?php include('onward/background.php') ?>
                     <h1>Join Us At Our Private Screening!</h1>
                 </div>
 
@@ -119,12 +119,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-row justify-items-center">
                         <div class="col-md-6 col-sm-12">
                             <label for="first_name">First Name*</label>
-                            <input type="text" class="form-control" name="first_name" id="first_name" value="<?php if(isset($_POST['first_name'])) echo $_POST['first_name'];  ?>">
+                            <input type="text" class="form-control" name="first_name" id="first_name" value="<?php echo $_POST['first_name'];  ?>">
                             <?php if(isset($error_msg[0])) { echo '<p class="text-danger">' . $error_msg[0] . '</p>'; } ?>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="last_name">Last Name*</label>
-                            <input type="text" class="form-control" name="last_name" id="last_name" value="<?php if(isset($_POST['last_name'])) echo $_POST['last_name'];  ?>">
+                            <input type="text" class="form-control" name="last_name" id="last_name" value="<?php echo $_POST['last_name'];  ?>">
                             <?php if(isset($error_msg[1])) { echo '<p class="text-danger">' . $error_msg[1] . '</p>'; } ?>
                         </div>
                     </div>
@@ -132,13 +132,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-row">
                         <div class="col-md-6 col-sm-12">
                             <label for="phone">Phone*</label>
-                            <input type="tel" class="form-control" name="phone" id="phone" onBlur="addDashes(this)" value="<?php if(isset($_POST['phone'])) echo $_POST['phone'];  ?>">
+                            <input type="tel" class="form-control" name="phone" id="phone" onBlur="addDashes(this)" value="<?php echo $_POST['phone'];  ?>">
                             <?php if(isset($error_msg[2])) { echo '<p class="text-danger">' . $error_msg[2] . '</p>'; } 
                             if(isset($error_msg[8])) { echo '<p class="text-danger">' . $error_msg[8] . '</p>'; } ?>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="email">Email*</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Ex: youremail@gmail.com" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Ex: youremail@gmail.com" value="<?php echo $_POST['email'];  ?>">
                             <?php if(isset($error_msg[3])) { echo '<p class="text-danger">' . $error_msg[3] . '</p>'; } ?>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-row">
                         <div class="col">
                             <label for="street">Street Address*</label>
-                            <input type="text" class="form-control" name="street" id="street" value="<?php if(isset($_POST['street'])) echo $_POST['street'];  ?>">
+                            <input type="text" class="form-control" name="street" id="street" value="<?php echo $_POST['street'];  ?>">
                             <?php if(isset($error_msg[4])) { echo '<p class="text-danger">' . $error_msg[4] . '</p>'; } ?>
                         </div>
                     </div>
@@ -154,12 +154,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-row">
                         <div class="col-md-6 col-sm-12">
                             <label for="city">City*</label>
-                            <input type="text" class="form-control" name="city" id="city" value="<?php if(isset($_POST['city'])) echo $_POST['city'];  ?>">
+                            <input type="text" class="form-control" name="city" id="city" value="<?php echo $_POST['city'];  ?>">
                             <?php if(isset($error_msg[5])) { echo '<p class="text-danger">' . $error_msg[5] . '</p>'; } ?>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="zip">Zip*</label>
-                            <input type="text" class="form-control" name="zip" id="zip" pattern="[0-9]*" placeholder="Ex: 90015" value="<?php if(isset($_POST['zip'])) echo $_POST['zip'];  ?>">
+                            <input type="text" class="form-control" name="zip" id="zip" pattern="[0-9]*" placeholder="Ex: 90015" value="<?php echo $_POST['zip'];  ?>">
                             <?php if(isset($error_msg[6])) { echo '<p class="text-danger">' . $error_msg[6] . '</p>'; } if(isset($error_msg[9])) { echo '<p class="text-danger">' . $error_msg[9] . '</p>'; } ?>
                         </div>
                     </div>

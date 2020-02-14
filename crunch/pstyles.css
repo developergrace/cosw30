@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+    background: rgb(26,181,212);
+    background: radial-gradient(circle, rgba(26,181,212,1) 0%, rgba(178,224,235,1) 47%, rgba(26,181,212,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.border {
+    /* box-shadow: 0 0 45px 1px #7a4434; */
+    height: 100%;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+header {
+	background-image: url('https://www.kitchenkneads.com/wp-content/uploads/2015/09/Peanuts-Blanched-Roasted-and-Salted-1000x1000.png');
+	background-repeat: repeat-x;
+	background-position: center;
+	height: 150px;
+}
+
+h1 {
+    color: #72392A;
+    text-shadow: -2px 2px 3px #F5B82B;
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+    font-size: 2.7em;
+}
+
+main {
+    text-align: justify;
+    margin: 0 5%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 2% auto;
+    min-width: 70%;
+}
+
+input, select, textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.1em;
+}
+
+label {
+    font-size: .9em;
+}
+
+.check {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.question {
+	display: flex;
+	flex-flow: column wrap;
+    min-width: 40%;
+}
+
+.data {
+	font-weight: bold;
+}
+
+button {
+    background-color: #EA212D;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Sriracha', cursive;
+    border: none;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: #F71735;
+}
+
+button:active {
+    background-color: #F15946;
+}

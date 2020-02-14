@@ -1,4 +1,4 @@
-<?php include('background.php') ?>
+<?php include('onward/background.php') ?>
                     <div class="background">
                         <?php
                             session_start();
