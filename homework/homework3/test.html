@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tuition Calculator</title>
+</head>
+<body>
+    <header>
+        <img src="lbcc_logo.svg">
+    </header>
+    <main>
+        <h1>LBCC Tuition Calculator</h1>
+        <p>Complete this form to calculate the cost of your tuition.</p>
+        <form method="POST" action="process_tuition.php">
+            <h2>Cost of Tuition</h2>
+            <div class="label"><label for="resident">*Are you a California state resident?</label></div>
+            <div class="field"><select name="resident" id="resident" required>
+                <option value="" selected disabled> Select One</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select></div>
+            
+            <div class="label"><label for="units">*Number of Units</label></div>
+            <div class="field"><select name="units" id="units" required>
+                <option value="" selected disabled> Select One</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+            </select></div>
+            
+            <p>There is a mandatory Student Health fee of $20.</p>
+            
+            <h2>Optional Fees</h2>
+            <div class="label"><label for="services">College Services Card:</label></div>
+            <div class="field"><select name="services" id="services">
+                <option value="No" selected>No [$0]</option>
+                <option value="Yes">Yes [$20]</option>
+            </select></div>
+            
+            <div class="label"><label for="parking">Parking Permit:</label></div>
+            <div class="field"><select name="parking" id="parking">
+                <option value="No" selected>No [$0]</option>
+                <option value="Yes">Yes [$30]</option>
+            </select></div>
+
+            <button>Calculate Cost</button>
+
+        </form>
+    </main>
+</body>
+</html>

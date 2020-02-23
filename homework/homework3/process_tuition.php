@@ -59,10 +59,16 @@
     
     <body>
         <header>
-            <img src="lbcc_logo.svg">
+            <img src="lbcc_logo.svg" alt="LBCC logo">
         </header>
         <main>
             <?php
+                //Or set values to cost
+                // $resident = $_POST['resident'];
+                // $units = $_POST['units'];
+                // $cost = $resident * $units;
+                // echo $cost;
+
                 //Posted Variables
                 $resident = $_POST['resident'];
                 $units = $_POST['units'];
@@ -117,7 +123,7 @@
                     echo "<p><b>Scholarship Award:</b> $$scholarship</p>";
                     echo "<p class=\"total\"><b>Total Due:</b> $$netCost</p>";
                     
-                    echo "<p class=\"back\"><a href=\"https://cosw30-grace.herokuapp.com/homework/homework3/tuition_calculator.html\">Go back</a></p>";
+                    echo "<p class=\"back\"><a href=\"tuition_calculator.html\">Go back</a></p>";
                 }
             
                 //Error Message

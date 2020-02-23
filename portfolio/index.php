@@ -47,7 +47,7 @@ Want to create something together? <a href="mailto:gpark2351@gmail.com">Let's ta
             <div class="info">
                 <h3>Bulma & Parallax</h3>
                 <p>My new & improved portfolio featuring more recent projects and made using the Bulma framework with a touch of Javascript.</p>
-                <a href="/" target="_blank">View Site</a>
+                <a href="http://developergrace.com" target="_blank">View Site</a>
             </div>
         </div>
 </div>
