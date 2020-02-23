@@ -42,12 +42,12 @@ Want to create something together? <a href="mailto:gpark2351@gmail.com">Let's ta
 </div>
 
 <div class="projects">
-    <img src="images/project2.PNG" alt="Codepen Portfolio">
+    <img src="images/project2.PNG" alt="New Portfolio">
         <div class="overlay">
             <div class="info">
                 <h3>Bulma & Parallax</h3>
                 <p>My new & improved portfolio featuring more recent projects and made using the Bulma framework with a touch of Javascript.</p>
-                <a href="http://developergrace.com" target="_blank">View Site</a>
+                <a href="http://www.developergrace.com" target="_blank">View Site</a>
             </div>
         </div>
 </div>
